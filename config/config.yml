@@ -1,0 +1,7 @@
+serverConfig:
+  tickRate: 500
+  welcomeText: |
+    <h1>Screeps Server</h1>
+  maxCPU: 600
+  baseCPU: 500
+  stepCPU: 50
