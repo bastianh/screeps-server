@@ -1,7 +1,7 @@
 FROM node:24-bookworm-slim
 
 # Install dependencies
-# Note: python2.7 is increasingly rare in modern distros; 
+# Note: python2.7 is increasingly rare in modern distros;
 # if it fails, consider if the modules actually need it or if python3 suffices.
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -22,7 +22,8 @@ RUN npm install screeps \
     screepsmod-mongo \
     screepsmod-auth \
     screepsmod-admin-utils \
-    screepsmod-map-tool
+    screepsmod-map-tool \
+    screepsmod-history
 
 # Copy scripts and configurations
 COPY scripts/install.sh /usr/local/bin/installMods
