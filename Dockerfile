@@ -24,7 +24,8 @@ RUN npm install screeps \
     screepsmod-admin-utils \
     screepsmod-map-tool \
     screepsmod-history \
-    screepsmod-telegram@beta
+    screepsmod-telegram@beta \
+    screepsmod-cors
 
 # Copy scripts and configurations
 COPY scripts/install.sh /usr/local/bin/installMods
